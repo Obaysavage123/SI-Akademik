@@ -1,10 +1,6 @@
-<?php 
-// mengaktifkan session php
+<?php
+include "konek.php";
 session_start();
- 
-// menghapus semua session
 session_destroy();
- 
-// mengalihkan halaman ke halaman login
-header("location:halamanloginawal.php");
+header("location:index.php");
 ?>
