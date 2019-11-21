@@ -1,0 +1,120 @@
+ul.lasmoid {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  list-style: none;
+}
+ul.lasmoid li.lasmoid {
+  display: block;
+  position: relative;
+  float: left;
+
+}
+li.lasmoid ul.lasmoid { display: none; }
+ul.lasmoid li.lasmoid a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  background:  #645DB5;
+  margin-left: 1px;
+  white-space: nowrap;
+  
+}
+ul.lasmoid li.lasmoid.aktif a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  background:#8080FF;
+  margin-left: 1px;
+  white-space: nowrap;
+  
+}
+
+ul.lasmoid li.lasmoid a:hover { background:#8080FF; }
+
+
+li.lasmoid:hover ul.lasmoid {
+  display: block;
+  position: absolute;
+}
+li.lasmoid:hover li.lasmoid {
+  float: none;
+  font-size: 11px;
+}
+li.lasmoid:hover a { background: #645DB5;  }
+li.lasmoid:hover li.lasmoid a:hover { background: #95A9B1; }
+.lasmoid-header
+{
+border-bottom: 1px solid #645DB5;
+}
+.lasmoid-table
+{
+border:1px solid #645DB5;
+}
+td.kotak{
+	border:1px solid #645DB5;
+	font:center;
+	text-align:center;
+	}
+td.kotak1{
+	border:1px solid #645DB5;
+	font:center;
+	text-align:center;
+	background-color: #A8A8FF;
+	}
+td.kotak2{
+	border:1px solid #645DB5;
+	font:center;
+	font-size:xx-small;
+	text-align:center;
+	background-color: #A8A8FF;
+	}
+td.kotak3{
+	border:1px solid #645DB5;
+	font:center;
+	font-size:xx-small;
+	text-align:center;
+	}
+tr.sort:hover td{
+	background-color: #A8A8FF;
+	}
+.calendar-box {
+	display:none;
+	background-color:#fff;
+	border:1px solid #444;
+	position:absolute;
+	width:250px;
+	padding: 0 5px;
+}
+.calendar-box select.calendar-month {
+	width:90px;
+}
+.calendar-box select.calendar-year {
+	width:70px;
+}
+.calendar-box .calendar-cancel {
+	width:100%;
+}
+.calendar-box table td {
+	width:14%;
+}
+.calendar-box .calendar-title {
+	text-align:center;
+}
+.calendar-box a {
+	text-decoration:none;
+}
+.calendar-box .today a {
+	padding:0 5px;
+	margin-left:-5px;
+	background-color:#ffe9c6;
+} 
+.calendar-box .selected a {
+	padding:0 5px;
+	margin-left:-5px;
+	background-color:#c9ff8b;
+}
